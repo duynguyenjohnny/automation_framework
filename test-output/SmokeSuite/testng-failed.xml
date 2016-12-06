@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [SmokeSuite]" parallel="tests">
+  <parameter name="port" value="4725"/>
+  <parameter name="device" value="emulator-5554"/>
+  <parameter name="bp" value="4728"/>
+  <test name="run on device 2(failed)" parallel="tests">
+    <parameter name="port" value="4725"/>
+    <parameter name="device" value="emulator-5554"/>
+    <parameter name="bp" value="4728"/>
+    <classes>
+      <class name="com.mediastep.test.ParallelTest">
+        <methods>
+          <include name="InvalidValidLoginTest"/>
+          <include name="quit"/>
+          <include name="testsetup"/>
+          <include name="testsetup"/>
+        </methods>
+      </class> <!-- com.mediastep.test.ParallelTest -->
+    </classes>
+  </test> <!-- run on device 2(failed) -->
+</suite> <!-- Failed suite [SmokeSuite] -->
