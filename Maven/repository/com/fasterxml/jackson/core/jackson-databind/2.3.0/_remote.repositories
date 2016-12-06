@@ -1,0 +1,5 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Thu Jun 02 11:48:29 ICT 2016
+jackson-databind-2.3.0-sources.jar>central=
+jackson-databind-2.3.0.jar>spring-milestones=
+jackson-databind-2.3.0.pom>spring-milestones=
