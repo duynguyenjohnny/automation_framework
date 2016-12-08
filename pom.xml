@@ -190,7 +190,7 @@
 						<target>1.7</target>
 					</configuration>
 				</plugin>
-				<plugin>
+		<!-- 		<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>2.19</version>
@@ -239,7 +239,7 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin>
+				</plugin> -->
 			</plugins>
 		</pluginManagement>
 	</build>
