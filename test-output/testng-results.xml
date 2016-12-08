@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="SmokeSuite" duration-ms="59466" started-at="2016-12-08T10:19:02Z" finished-at="2016-12-08T10:20:01Z">
+  <suite name="SmokeSuite" duration-ms="46446" started-at="2016-12-08T10:42:42Z" finished-at="2016-12-08T10:43:28Z">
     <groups>
     </groups>
-    <test name="run on device 2" duration-ms="39602" started-at="2016-12-08T10:19:02Z" finished-at="2016-12-08T10:19:41Z">
+    <test name="run on device 2" duration-ms="37371" started-at="2016-12-08T10:42:42Z" finished-at="2016-12-08T10:43:19Z">
       <class name="com.mediastep.test.ParallelTest">
-        <test-method status="PASS" signature="testsetup(java.lang.String, java.lang.String)[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="testsetup" is-config="true" duration-ms="10625" started-at="2016-12-08T17:19:02Z" finished-at="2016-12-08T17:19:12Z">
+        <test-method status="PASS" signature="testsetup(java.lang.String, java.lang.String)[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="testsetup" is-config="true" duration-ms="8577" started-at="2016-12-08T17:42:42Z" finished-at="2016-12-08T17:42:51Z">
           <params>
             <param index="0">
               <value>
@@ -23,23 +23,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testsetup -->
-        <test-method status="PASS" signature="ValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="ValidLoginTest" duration-ms="24093" started-at="2016-12-08T17:19:12Z" finished-at="2016-12-08T17:19:36Z">
+        <test-method status="PASS" signature="ValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="ValidLoginTest" duration-ms="24468" started-at="2016-12-08T17:42:51Z" finished-at="2016-12-08T17:43:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLoginTest -->
-        <test-method status="PASS" signature="InvalidValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="InvalidValidLoginTest" duration-ms="3879" started-at="2016-12-08T17:19:36Z" finished-at="2016-12-08T17:19:40Z">
+        <test-method status="PASS" signature="InvalidValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="InvalidValidLoginTest" duration-ms="3540" started-at="2016-12-08T17:43:15Z" finished-at="2016-12-08T17:43:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidValidLoginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="quit" is-config="true" duration-ms="951" started-at="2016-12-08T17:19:40Z" finished-at="2016-12-08T17:19:41Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.mediastep.test.ParallelTest@26653222]" name="quit" is-config="true" duration-ms="767" started-at="2016-12-08T17:43:19Z" finished-at="2016-12-08T17:43:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.mediastep.test.ParallelTest -->
     </test> <!-- run on device 2 -->
-    <test name="run on device 1" duration-ms="59466" started-at="2016-12-08T10:19:02Z" finished-at="2016-12-08T10:20:01Z">
+    <test name="run on device 1" duration-ms="46446" started-at="2016-12-08T10:42:42Z" finished-at="2016-12-08T10:43:28Z">
       <class name="com.mediastep.test.ParallelTest">
-        <test-method status="PASS" signature="testsetup(java.lang.String, java.lang.String)[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="testsetup" is-config="true" duration-ms="26376" started-at="2016-12-08T17:19:02Z" finished-at="2016-12-08T17:19:28Z">
+        <test-method status="PASS" signature="testsetup(java.lang.String, java.lang.String)[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="testsetup" is-config="true" duration-ms="14546" started-at="2016-12-08T17:42:42Z" finished-at="2016-12-08T17:42:57Z">
           <params>
             <param index="0">
               <value>
@@ -55,15 +55,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testsetup -->
-        <test-method status="PASS" signature="ValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="ValidLoginTest" duration-ms="26978" started-at="2016-12-08T17:19:28Z" finished-at="2016-12-08T17:19:55Z">
+        <test-method status="PASS" signature="ValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="ValidLoginTest" duration-ms="26815" started-at="2016-12-08T17:42:57Z" finished-at="2016-12-08T17:43:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLoginTest -->
-        <test-method status="PASS" signature="InvalidValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="InvalidValidLoginTest" duration-ms="4971" started-at="2016-12-08T17:19:55Z" finished-at="2016-12-08T17:20:00Z">
+        <test-method status="PASS" signature="InvalidValidLoginTest()[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="InvalidValidLoginTest" duration-ms="3901" started-at="2016-12-08T17:43:23Z" finished-at="2016-12-08T17:43:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InvalidValidLoginTest -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="quit" is-config="true" duration-ms="1127" started-at="2016-12-08T17:20:00Z" finished-at="2016-12-08T17:20:01Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.mediastep.test.ParallelTest@6767c1fc]" name="quit" is-config="true" duration-ms="1177" started-at="2016-12-08T17:43:27Z" finished-at="2016-12-08T17:43:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
