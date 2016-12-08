@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="run on device 1"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="32.977">
+  <properties />
+  
+  
+            <testcase name="ValidLoginTest" time="28.420" classname="com.mediastep.test.ParallelTest" />
+                <testcase name="InvalidValidLoginTest" time="4.557" classname="com.mediastep.test.ParallelTest" />
+      
+</testsuite>
