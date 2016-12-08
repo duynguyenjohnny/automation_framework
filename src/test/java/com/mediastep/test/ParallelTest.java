@@ -2,6 +2,7 @@ package com.mediastep.test;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
 
 import java.io.File;
 import java.net.MalformedURLException;
@@ -24,35 +25,57 @@ public class ParallelTest {
 	
 	public static DesiredCapabilities cap;
 	
-	@BeforeTest(alwaysRun=true)
-	@Parameters({"port","device"})
-	public void testsetup(@Optional("4723") String port,@Optional("SCL24")String device) throws MalformedURLException, InterruptedException{
-				
-		//String path = "D://Appium//apkfiles//com.gorillalogic.monkeytalk.demo1.apk";
-		String path = "E://com.gorillalogic.monkeytalk.demo1.apk";
-		File file = new File(path);
-		
-		cap = new DesiredCapabilities();
-		cap.setCapability("no",true);
-		cap.setCapability("newCommandTimeout", 100000);
-		cap.setCapability("noReset", true);
-		cap.setCapability("platformName", "Android");
-		
-		cap.setCapability("platformVersion", "5.0.1");
-		
-		cap.setCapability("deviceName", device);
-		
-		cap.setCapability("app", file);
-	
-		cap.setCapability("noRest", true);
-	//	cap.setCapability("appPackage", "com.aio.downloader");
-		//cap.setCapability("appActivity", "com.aio.downloader.start.MainActivity");
-		driver = new AndroidDriver<>(new URL("http://localhost:"+port+"/wd/hub"), cap);
-		
-		System.out.println("session id is---"+driver.getSessionId());
-		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+//	@BeforeTest(alwaysRun=true)
+//	@Parameters({"port","device"})
+//	public void testsetup(@Optional("4723") String port,@Optional("SCL24")String device) throws MalformedURLException, InterruptedException{
+//				
+//		//String path = "D://Appium//apkfiles//com.gorillalogic.monkeytalk.demo1.apk";
+//		String path = "E://com.gorillalogic.monkeytalk.demo1.apk";
+//		File file = new File(path);
+//		
+//		cap = new DesiredCapabilities();
+//		//cap.setCapability("no",true);
+//		//cap.setCapability("newCommandTimeout", 100000);
+//		cap.setCapability("noReset", true);
+//		cap.setCapability("platformName", "Android");
+//		
+//		cap.setCapability("platformVersion", "5.0.1");
+//		
+//		cap.setCapability("deviceName", device);
+//		
+//		cap.setCapability("app", file);
+//	
+//	//	cap.setCapability("noRest", true);
+//	//	cap.setCapability("appPackage", "com.aio.downloader");
+//		//cap.setCapability("appActivity", "com.aio.downloader.start.MainActivity");
+//		driver = new AndroidDriver<>(new URL("http://localhost:"+port+"/wd/hub"), cap);
+//		
+//		System.out.println("session id is---"+driver.getSessionId());
+//		
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		@BeforeTest(alwaysRun=true)
+		@Parameters({"port","device"})
+		public void testsetup(String port,String device) throws MalformedURLException, InterruptedException{
+					
+			//String path = "D://Appium//apkfiles//com.gorillalogic.monkeytalk.demo1.apk";
+			String path = "E://com.gorillalogic.monkeytalk.demo1.apk";
+			File file = new File(path);
+			
+			cap = new DesiredCapabilities();
+			
+			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+			
+			cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "5.0.1");
+			
+			cap.setCapability(MobileCapabilityType.DEVICE_NAME, device);
+			
+			cap.setCapability(MobileCapabilityType.APP, file);
+			
+			driver = new AndroidDriver<>(new URL("http://localhost:"+port+"/wd/hub"), cap);
+			
+			System.out.println("session id is---"+driver.getSessionId());
+			
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@Test
@@ -68,6 +91,7 @@ public class ParallelTest {
 		String name = driver.findElementById("com.gorillalogic.monkeytalk.demo1:id/logout_txt").getText();
 		
 		Assert.assertTrue(name.contains("admin"));
+		driver.findElementById("com.gorillalogic.monkeytalk.demo1:id/logout_btn").click();
 		
 	}
 	
@@ -82,14 +106,13 @@ public class ParallelTest {
 		        
 		        driver.findElementById("com.gorillalogic.monkeytalk.demo1:id/forms_radio_c").click();
 			}
-			if(tabs.get(i).getText().contains("web")){
-				tabs.get(i).click();
-				driver.findElementByAccessibilityId("Hello!").clear();
-				driver.findElementByAccessibilityId("Hello!").sendKeys("this is arvind");
-				driver.findElementByAccessibilityId("B").click();
-				driver.findElementByAccessibilityId("GO!").click(); 				
-				
-			}
+//			if(tabs.get(i).getText().contains("web")){
+//				tabs.get(i).click();
+//				driver.findElementByAccessibilityId("Hello!").clear();
+//				driver.findElementByAccessibilityId("Hello!").sendKeys("this is arvind");
+//				driver.findElementByAccessibilityId("B").click();
+//				driver.findElementByAccessibilityId("GO!").click(); 								
+//			}
 			
 		}
         

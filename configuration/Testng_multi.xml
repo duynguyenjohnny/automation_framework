@@ -1,21 +1,19 @@
-<suite name="SmokeSuite" verbose="1" parallel="tests"
+<suite name="SmokeSuite" verbose="4" parallel="tests"
 	thread-count="5">
-	<!-- <listeners> <listener class-name="org.uncommons.reportng.HTMLReporter" 
-		/> <listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> </listeners> -->
-
-	<tests>
+	<!-- <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners -->>
 
 		<test name="run on device 1">
 
+			<parameter name="port" value="4723" />
+			<parameter name="device" value="SCL24"></parameter>
 			<classes>
-				<parameter name="port" value="4723" />
-				<parameter name="device" value="SCL24"></parameter>
-
 				<class name="com.mediastep.test.ParallelTest">
 					<methods>
-
 						<include name="ValidLoginTest" />
-						<exclude name="InvalidValidLoginTest" />
+						<include name="InvalidValidLoginTest" />
 					</methods>
 				</class>
 			</classes>
@@ -23,17 +21,16 @@
 
 		<test name="run on device 2">
 
+			<parameter name="port" value="4725"></parameter>
+			<parameter name="device" value="ASUS_T00N"></parameter>
+			<parameter name="bp" value="4728"></parameter>
 			<classes>
-				<parameter name="port" value="4725"></parameter>
-				<parameter name="device" value="emulator-5554"></parameter>
-				<parameter name="bp" value="4728"></parameter>
 				<class name="com.mediastep.test.ParallelTest">
 					<methods>
+						<include name="ValidLoginTest" />
 						<include name="InvalidValidLoginTest" />
-						<exclude name="ValidLoginTest" />
 					</methods>
 				</class>
 			</classes>
 		</test>
-	</tests>
 </suite>

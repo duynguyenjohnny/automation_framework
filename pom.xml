@@ -172,8 +172,45 @@
 			<artifactId>jsch.agentproxy.jsch</artifactId>
 			<version>0.0.9</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>2.19.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.6.6</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sf.dozer</groupId>
+			<artifactId>dozer</artifactId>
+			<version>5.5.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>jcl-over-slf4j</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>slf4j-api</artifactId>
+					<groupId>org.slf4j</groupId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.2</version>
+		</dependency>
 	</dependencies>
 	<build>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -196,16 +233,16 @@
 					<properties>
 						<property>
 							<name>usedefaultlisteners</name>
-							<value>false</value><!-- disabling default listeners is optional -->
+							<value>false</value>
+							disabling default listeners is optional
 						</property>
 						<property>
 							<name>listener</name>
 							<value>com.mycompany.MyResultListener,com.mycompany.MyAnnotationTransformer,com.mycompany.MyMethodInterceptor</value>
 						</property>
 					</properties>
-					<!--<suiteXmlFiles> -->
-					<!--<suiteXmlFile>configuration/${suiteXmlFile}</suiteXmlFile> -->
-					<!--</suiteXmlFiles> -->
+					<!-- <suiteXmlFiles> <suiteXmlFile>configuration/${suiteXmlFile}</suiteXmlFile> 
+						</suiteXmlFiles> -->
 				</configuration>
 			</plugin>
 			<plugin>
@@ -234,6 +271,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+
 	</build>
 	<artifactId>mediastep_test</artifactId>
 </project>
