@@ -1,22 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SmokeSuite]" parallel="tests">
+<suite verbose="4" name="Failed suite [SmokeSuite]" parallel="tests">
   <parameter name="port" value="4725"/>
-  <parameter name="device" value="emulator-5554"/>
+  <parameter name="device" value="ASUS_T00N"/>
   <parameter name="bp" value="4728"/>
   <test name="run on device 2(failed)" parallel="tests">
     <parameter name="port" value="4725"/>
-    <parameter name="device" value="emulator-5554"/>
+    <parameter name="device" value="ASUS_T00N"/>
     <parameter name="bp" value="4728"/>
     <classes>
       <class name="com.mediastep.test.ParallelTest">
         <methods>
           <include name="InvalidValidLoginTest"/>
-          <include name="quit"/>
           <include name="testsetup"/>
           <include name="testsetup"/>
+          <include name="ValidLoginTest"/>
         </methods>
       </class> <!-- com.mediastep.test.ParallelTest -->
     </classes>
   </test> <!-- run on device 2(failed) -->
+  <test name="run on device 1(failed)" parallel="tests">
+    <parameter name="port" value="4723"/>
+    <parameter name="device" value="SCL24"/>
+    <classes>
+      <class name="com.mediastep.test.ParallelTest">
+        <methods>
+          <include name="InvalidValidLoginTest"/>
+          <include name="testsetup"/>
+          <include name="testsetup"/>
+          <include name="ValidLoginTest"/>
+        </methods>
+      </class> <!-- com.mediastep.test.ParallelTest -->
+    </classes>
+  </test> <!-- run on device 1(failed) -->
 </suite> <!-- Failed suite [SmokeSuite] -->

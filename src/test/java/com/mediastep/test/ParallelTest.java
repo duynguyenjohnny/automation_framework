@@ -55,7 +55,7 @@ public class ParallelTest {
 //		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		@BeforeTest(alwaysRun=true)
 		@Parameters({"port","device"})
-		public void testsetup(String port,String device) throws MalformedURLException, InterruptedException{
+		public void testsetup(@Optional("4723") String port,@Optional("SCL24")String device) throws MalformedURLException, InterruptedException{
 					
 			//String path = "D://Appium//apkfiles//com.gorillalogic.monkeytalk.demo1.apk";
 			String path = "E://com.gorillalogic.monkeytalk.demo1.apk";
