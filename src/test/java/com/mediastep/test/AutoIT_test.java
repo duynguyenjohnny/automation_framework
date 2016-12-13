@@ -5,11 +5,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;		
 import org.openqa.selenium.WebDriver;		
-import org.openqa.selenium.firefox.FirefoxDriver;		
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.firefox.FirefoxDriver;
 public class AutoIT_test {	
 	//protected static WebDriver driver;
-public static void main(String[] args) throws IOException {		
+public static void main(String[] args) throws IOException, InterruptedException {		
 	
 //	System.out.println(" Executing on FireFox");
 //	System.setProperty("webdriver.gecko.driver", "webdrivers//geckodriver.exe");
@@ -27,7 +26,8 @@ public static void main(String[] args) throws IOException {
     driver.findElement(By.xpath(".//*[@id='top-bar']/div/ul[2]/li[1]/span/span[2]")).click();			
     driver.findElement(By.xpath(".//*[@id='anywhere-upload']/div[1]/div/div[1]/div/div[1]/span")).click();							
     // below line execute the AutoIT script .
-     Runtime.getRuntime().exec("E:\\fileupload.exe");		
+    Thread.sleep(5000);
+     Runtime.getRuntime().exec("D:\\mediastep_test\\asset\\fileupload.exe");		
     //driver.findElement(By.id("input_6")).sendKeys("AutoIT in Selenium");					
     driver.findElement(By.xpath(".//*[@id='anywhere-upload-submit']/div[1]/button[2]")).click();
     driver.close();

@@ -4,13 +4,6 @@ import static java.awt.event.KeyEvent.*;
 
 import java.awt.AWTException;
 import java.awt.Robot;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.util.Enumeration;
 
 public class Keyboard {
 

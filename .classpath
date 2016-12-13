@@ -6,12 +6,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+	<classpathentry exported="true" kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -23,5 +23,67 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/AutoItX4Java-1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/selenium-server-standalone-3.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/cglib-nodep-2.1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons.collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/cssparser-0.9.11.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/cssparser-0.9.20.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/guava-15.0-extended-1.1.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/guava-15.0-rc1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/htmlunit-2.13.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/htmlunit-core-js-2.13.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/httpclient-4.3.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/httpmime-4.3.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/json-20080701.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/jsr305-3.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/junit-4.11.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/nekohtml-1.9.19.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/org.apache.commons.logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/poi-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/poi-examples-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/poi-excelant-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/poi-ooxml-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/poi-ooxml-schemas-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/poi-scratchpad-3.10-FINAL-20140208.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/selenium-firefox-driver-3.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/selenium-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/selenium-java-2.41.0-sources.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/selenium-java-3.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/testng-6.8.8.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/xercesImpl-2.10.0.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="E:/Mediastep Automation/library selenium/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/mediastep_test/src/sikuli/sikulixapi.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

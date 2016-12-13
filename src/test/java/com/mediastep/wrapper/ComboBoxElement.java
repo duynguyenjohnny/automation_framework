@@ -1,6 +1,5 @@
 package com.mediastep.wrapper;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;

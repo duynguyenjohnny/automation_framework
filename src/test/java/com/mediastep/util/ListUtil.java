@@ -3,8 +3,6 @@ package com.mediastep.util;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-import org.testng.Reporter;
-
 public class ListUtil extends LogReporter{
 	
 	public static Boolean containsAll(ArrayList<String> array1,	ArrayList<String> array2) {
